@@ -7,7 +7,7 @@ func sortMapValues(input map[int]string) (result []string) {
 	for k := range input {
 		keys = append(keys, k)
 	}
-	keys = sort.IntSlice(keys)
+	sort.Ints(keys)
 
 	for _, key := range keys {
 		result = append(result, input[key])
